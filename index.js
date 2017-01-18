@@ -42,7 +42,7 @@ app.post('/webhook/', function (req, res) {
 const token = "EAADskAWpP88BAIcX3a2hclBgyuVVoP9mQFk3w1mf7O6SINTYYo24KUIc9lYVeDkhzPK1ZBh7Cg0S6gRAVbGtJZAZCoKAfN1NbRZC16ZBGeVbNcWPKZC28dSCUevPgPw016EKRJimbippGlfhyvEGtyxdBUa2MZCq3mybvUGsmfhEgZDZD"
 
 function sendTextMessage(sender, text) {
-    let messageData = { text:text }
+    let messageData = { text:'this is a test bot' }
     request({
         url: 'https://graph.facebook.com/v2.6/me/messages',
         qs: {access_token:token},
